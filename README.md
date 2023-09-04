@@ -1,0 +1,1 @@
+# MyDotHyprland-minimal
