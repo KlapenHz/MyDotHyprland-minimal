@@ -1,13 +1,18 @@
 # MyDotHyprland-minimal
 
+Minimal installation includes:
+- Hyprland,
+- waybar,
+- wofi
+
 Install packages:
 hyprland
-mako - notification daemon
-pipewire - multimedia framework for audio and screensharing
-wireplumber - session and policy manager for pipewire
+mako - notification daemon  
+pipewire - multimedia framework for audio and screensharing  
+wireplumber - session and policy manager for pipewire  
 xdg-desktop-portal-hyprland - An XDG Desktop Portal (later called XDP) is a program  
 that lets other applications communicate swiftly with the compositor through D-Bus.
-waybar - stauses bar
+waybar - status bar
 
 pacman -S ...
 
