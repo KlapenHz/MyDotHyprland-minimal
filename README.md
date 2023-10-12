@@ -5,14 +5,21 @@ Minimal installation includes:
 - waybar,
 - wofi
 
-Install packages:
-hyprland
+Install packages:  
+hyprland  
 mako - notification daemon  
 pipewire - multimedia framework for audio and screensharing  
 wireplumber - session and policy manager for pipewire  
+pulseaudio
+pulseaudio-bluetooth  
+pavucontrol  
 xdg-desktop-portal-hyprland - An XDG Desktop Portal (later called XDP) is a program  
 that lets other applications communicate swiftly with the compositor through D-Bus.
 waybar - status bar
+
+Optional:
+sof-firmware - additional drivers   # For example if we don't see sound card  
+                                    # with command: `pacmd list-cards`
 
 pacman -S ...
 
