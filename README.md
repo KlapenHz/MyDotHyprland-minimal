@@ -13,6 +13,7 @@ This is my absolute minimum to get Hyprland usable
 | mako                        | Notification deamon                                                                      |
 | pavucontrol                 | PulseAudio Volume Control                                                                |
 | pipewire                    | Multimedia framework for audio and screensharing                                         |
+| polkit-gnome                | Authentication agent                                                                     |
 | pulseaudio                  | Network-capable sound server program                                                     |
 | pulseaudio-bluetooth        | Bluetooth support for PulseAudio                                                         |
 | sof-firmware                | (optional) Additional drivers for sound card                                             |
