@@ -26,7 +26,7 @@ This is my absolute minimum to get Hyprland usable
 | xdg-desktop-portal-hyprland | Lets other applications communicate through D-Bus.                                       |
 
 ### Install packages:  
-`pacman -S ...`
+`pacman -S <the-above-packages>`
 
 Some dependencies that will install with the above packages and which are worth knowing about:
 - polkit
@@ -43,7 +43,7 @@ Clone the repository:
 Copy the files to ~/.config/hypr/
 ```
 cd MyDotHyprland-minimal
-cp -R .config/* ~/.config/hypr/
+cp -R .config/* ~/.config/
 ```
 ### Optional
 - Setting display resolution if needed:
@@ -58,7 +58,8 @@ cp -R .config/* ~/.config/hypr/
 	sudo pacman -S read-edid
 	cat /sys/class/drm/card<NUMBER>-<interface>/edid | parse-edid
 	```
-	Change display settings in: `~/.config/hypr/hyprland.conf`  
+	Change display settings in:  
+	`~/.config/hypr/hyprland.conf`  
 	for example from:  
 	`monitor=,preferred,auto,auto`  
 	to:
