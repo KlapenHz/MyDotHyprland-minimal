@@ -1,7 +1,22 @@
 # MyDotHyprland-minimal
-This is my absolute minimum to get Hyprland usable
+This is my absolute minimum to get Hyprland usable. Instalation is based on Arch Linux.  
+Some basics how to install Arch Linux you can find here:  
+https://github.com/KlapenHz/MyArch
 
-### Minimal installation includes:
+![Desktop](images/desktop.png "desktop")
+---
+### What is Hyprland?
+
+Hyprland is a dynamic tiling Wayland compositor based on wlroots that doesn't sacrifice on its looks.
+
+It supports multiple layouts, fancy effects, has a very flexible IPC model allowing for a lot of customization, a powerful plugin system and more. More information you can find here:
+
+[Hyprland - github page](https://github.com/hyprwm/Hyprland)
+
+---
+### Packages
+
+Minimal installation includes:
 
 | Package                     | Description                                                                              |
 | ----------                  | ----------                                                                               |
@@ -24,9 +39,18 @@ This is my absolute minimum to get Hyprland usable
 | wireplumber                 | A session and policy manager for PipeWire                                                |
 | wofi                        | A rofi inspired launcher for wlroots compositors                                         |
 | xdg-desktop-portal-hyprland | Lets other applications communicate through D-Bus.                                       |
+---
+### Installation:  
 
-### Install packages:  
-`pacman -S <the-above-packages>`
+Enter the commands below:
+
+```
+pacman -Syu
+pacman -S hyprland firefox git gvfs kitty mako \
+  pavucontrol pipewire polkit-gnome pulseaudio \
+  pulseaudio-bluetooth thunar thunar-archive-plugin \
+  ttf-font-awesome waybar wireplumber wofi xdg-desktop-portal-hyprland
+```
 
 Some dependencies that will install with the above packages and which are worth knowing about:
 - polkit
@@ -35,17 +59,53 @@ Some dependencies that will install with the above packages and which are worth 
 - qt6-translations
 - qt6-wayland
 
+---
 ### Configuration
 
 Clone the repository:  
 `git clone https://github.com/KlapenHz/MyDotHyprland-minimal.git`
 
-Copy the files to ~/.config/hypr/
+Copy the files to `~/.config/hypr/`
 ```
 cd MyDotHyprland-minimal
 cp -R .config/* ~/.config/
 ```
+---
+### Start hyprland
+
+Run in your terminal command: `Hyprland`
+
+---
+### Key bindings
+
+Apps:
+```
+sup + T         - kitty
+sup + Q         - kill active
+sup + Shift + M - force to quit from Hyperland
+sup + E         - filebrowser (thunar)
+sup + V         - togglefloating - allow window to float
+sup + D         - app launcher (wofi)
+```
+Change focus:
+```
+sup + arrows
+```
+Workspaces:
+```
+sup + NUM_1-0    - move active window to workspaces
+sup + Shift + NUM{1-0}  - move active container to workspace
+sup + scroll     - change workspaces
+```
+Mouse:
+```
+sup + LMB - Move window
+sup + RMB - Resize windows
+```
+
+---
 ### Optional
+
 - Setting display resolution if needed:
 
 	- Check displays:  
