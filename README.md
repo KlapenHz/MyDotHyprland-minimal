@@ -20,12 +20,14 @@ Minimal installation includes:
 
 | Package                     | Description                                                                              |
 | ----------                  | ----------                                                                               |
+| file-roller                 | Create and modify archives (Thunar)                                                                                         |
 | firefox                     | Web browser                                                                              |
 | git                         | Version control system                                                                   |
 | gvfs                        | Gnome Virtual File System (Thunar) - support for trash, removable media and more.        |
 | hyprland                    | Wayland compositor                                                                       |
 | kitty                       | GPU-accelerated terminal emulator                                                        |
 | mako                        | Notification deamon                                                                      |
+| network-manager-applet      | NetworkManager GUI connection editor and widgets                                         |
 | pavucontrol                 | PulseAudio Volume Control                                                                |
 | pipewire                    | Multimedia framework for audio and screensharing                                         |
 | polkit-gnome                | Authentication agent                                                                     |
@@ -46,8 +48,8 @@ Enter the commands below:
 
 ```
 pacman -Syu
-pacman -S hyprland firefox git gvfs kitty mako \
-  pavucontrol pipewire polkit-gnome pulseaudio \
+pacman -S hyprland file-roller firefox git gvfs kitty mako \
+  network-manager-applet pavucontrol pipewire polkit-gnome pulseaudio \
   pulseaudio-bluetooth thunar thunar-archive-plugin \
   ttf-font-awesome waybar wireplumber wofi xdg-desktop-portal-hyprland
 ```
